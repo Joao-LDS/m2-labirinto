@@ -9,13 +9,9 @@ public class PrincipalLabirinto {
 	    System.out.println("Digite o nome do arquivo: ");
 	    String fileName = sc.nextLine();
 	    
-	    char[][] labirinto = Labirinto.carregaLabirinto(fileName);
+	    Labirinto l = new Labirinto();
+	    boolean temCaminho = l.labirinto(fileName);
 	    
-	    if (Labirinto.labirinto(labirinto)) {
-	    	
-	    } else {
-	    	
-	    }
 	    
 	    sc.close();
 
